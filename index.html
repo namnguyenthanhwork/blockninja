@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:url" content="https://namnguyenthanhwork.github.io/bio" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Hiii, chào mừng đến với website của Thành Nam ❤" />
+    <meta property="og:description" content="Weo com tu my website ('-')" />
+    <meta property="og:image" content="https://i.pinimg.com/564x/a9/5a/c4/a95ac41b6c87b332c8aab03e8516ee62.jpg" />
+    <title>Thành Nam Bio</title>
+    <link rel="shortcut icon" href="img/favicon.ico" />
+
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Reponsive -->
+    <link rel="stylesheet" href="./css/responsive.css">
+
+</head>
+
+<body>
+    <!-- Game canvas -->
+    <canvas id="c"></canvas>
+
+    <!-- Gameplay HUD -->
+    <div class="hud">
+        <div class="hud__score">
+            <div class="score-lbl"></div>
+            <div class="cube-count-lbl"></div>
+        </div>
+        <div class="pause-btn">
+            <div></div>
+        </div>
+        <div class="slowmo">
+            <div class="slowmo__bar"></div>
+        </div>
+    </div>
+
+    <!-- Menu System -->
+    <div class="menus">
+        <div class="menu menu--main">
+            <h1>Block Ninja</h1>
+            <button type="button" class="play-normal-btn">Chơi ngay</button>
+            <button type="button" class="play-casual-btn">Chế độ bình thường</button>
+        </div>
+        <div class="menu menu--pause">
+            <h1>Tạm dừng</h1>
+            <button type="button" class="resume-btn">Chơi lại</button>
+            <button type="button" class="menu-btn--pause">Menu chính</button>
+        </div>
+        <div class="menu menu--score">
+            <h1>Thua cuộc</h1>
+            <h2>Điểm của bạn:</h2>
+            <div class="final-score-lbl"></div>
+            <div class="high-score-lbl"></div>
+            <button type="button" class="play-again-btn">Chơi lại</button>
+            <button type="button" class="menu-btn--score">Menu chính</button>
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
